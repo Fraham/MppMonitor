@@ -1,0 +1,79 @@
+html,
+body, .fullBody, .monitor {
+    height: 100%;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.centreTextContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+.bigFont {
+    font-size: 1em;
+    color: #ccc;
+}
+
+.smallFont {
+    font-size: 0.5em;
+}
+
+.smallerFont {
+    font-size: 0.2em;
+}
+
+.good {
+    background-color: green;
+    background-image: linear-gradient(135deg, transparent, transparent 25%, hsla(0,0%,0%,.1) 25%, hsla(0,0%,0%,.1) 50%, transparent 50%, transparent 75%, hsla(0,0%,0%,.1) 75%, hsla(0,0%,0%,.1));
+    background-size: 100px 100px;
+}
+
+.caution {
+    background-color: orange;
+    background-image: linear-gradient(135deg, transparent, transparent 25%, hsla(0,0%,0%,.1) 25%, hsla(0,0%,0%,.1) 50%, transparent 50%, transparent 75%, hsla(0,0%,0%,.1) 75%, hsla(0,0%,0%,.1));
+    background-size: 100px 100px;
+    animation: BackgroundAnimation 20s linear infinite;
+}
+
+.alert {
+    background-color: #c4453c;
+    background-image: linear-gradient(135deg, transparent, transparent 25%, hsla(0,0%,0%,.1) 25%, hsla(0,0%,0%,.1) 50%, transparent 50%, transparent 75%, hsla(0,0%,0%,.1) 75%, hsla(0,0%,0%,.1));
+    background-size: 100px 100px;
+    animation: BackgroundAnimation 10s linear infinite;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    font-size: 20vh;
+}
+
+.single {
+    font-size: 40vh;
+}
+
+.grid .monitor{
+    border: 2px solid #000;
+}
+
+@keyframes BackgroundAnimation {
+    0% { background-position: 0% 0% }
+
+    50% {
+        background-position: 100% 0%
+    }
+
+    100% {
+        background-position: 0% 0%
+    }
+}

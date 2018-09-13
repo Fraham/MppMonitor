@@ -1,0 +1,15 @@
+﻿@model MppMonitor.ViewModel.PaymentProviderViewModel
+
+@{
+    Layout = "_Layout";
+}
+
+<script src="~/lib/signalr/signalr.js"></script>
+
+@{
+    ViewData["Title"] = "Auth Rates";
+}
+
+<div class="single fullBody">
+    @await Component.InvokeAsync("PaymentAuthRate", Model.PaymentProvider)
+</div>

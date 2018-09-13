@@ -1,0 +1,16 @@
+﻿@model MppMonitor.ViewModel.PaymentProviderViewModel
+
+<div class="container monitor">
+    <div class="row fullBody">
+        <div class="centreTextContainer caution" id="PaymentAuthRateContainer-@Model.PaymentProvider">
+            <span>
+                <p class="bigFont" id="PaymentAuthRateRate-@Model.PaymentProvider">Waiting for update</p>
+                <p class="smallFont" id="PaymentAuthRatePaymentProvider-@Model.PaymentProvider" />
+                <p class="smallerFont">Payment Authentication Rates</p>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/paymentAuthRate.js"></script>
+

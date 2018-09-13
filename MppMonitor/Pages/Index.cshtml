@@ -1,0 +1,12 @@
+﻿@page
+
+@{ViewData["Title"] = "Monitors";}
+
+<script src="~/lib/signalr/signalr.js"></script>
+
+<div class="grid">
+    @await Component.InvokeAsync("ArQueueSize")
+    @await Component.InvokeAsync("PaymentAuthRate", "Overall")
+    @await Component.InvokeAsync("PaymentAuthRate", "SecPay")
+    @await Component.InvokeAsync("PaymentAuthRate", "Realex")
+</div>

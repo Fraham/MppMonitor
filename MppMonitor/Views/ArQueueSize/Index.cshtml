@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<script src="~/lib/signalr/signalr.js"></script>
+
+@{
+    ViewData["Title"] = "Auto Renew Queue Size";
+}
+
+<div class="single fullBody">
+    @await Component.InvokeAsync("ArQueueSize")
+</div>
